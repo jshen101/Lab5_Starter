@@ -26,7 +26,7 @@ function init() {
     }
   });
 
-  vol.addEventListener("change", () => {
+  vol.addEventListener("input", () => {
     // console.log(vol.value);
     let val = vol.value;
     aud.volume = val*0.01;
